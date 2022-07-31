@@ -13,7 +13,7 @@
   <meta name="author" content="" />
   <link rel="shortcut icon" href="images/favicon.png" type="">
 
-  <title> Feane </title>
+  <title> Pizza_Me </title>
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -44,7 +44,7 @@
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a class="navbar-brand" href="index.html">
             <span>
-              Feane
+              Pizza_Me
             </span>
           </a>
 
@@ -1127,47 +1127,57 @@
     <div class="container">
       <div class="heading_container">
         <h2>
-          Book A Table
+         Order Now
         </h2>
       </div>
       <div class="row">
         <div class="col-md-6">
           <div class="form_container">
-            <form action="">
+            <form action="#" name="frm" method="post">
               <div>
-                <input type="text" class="form-control" placeholder="Your Name" />
+                <input type="text" id="txtName" class="form-control" placeholder="Your Name" />
               </div>
               <div>
-                <input type="text" class="form-control" placeholder="Phone Number" />
-              </div>
-              <div>
-                <input type="email" class="form-control" placeholder="Your Email" />
+                <input type="text" id="txtTel" class="form-control" placeholder="Phone Number" />
               </div>
               <div>
                 <select class="form-control nice-select wide">
                   <option value="" disabled selected>
-                    How many persons?
+                    Size 
                   </option>
                   <option value="">
-                    2
+                    Large - Ksh 1000
                   </option>
                   <option value="">
-                    3
+                  Small - Ksh 500
                   </option>
                   <option value="">
-                    4
+                    Medium - Ksh 800
                   </option>
-                  <option value="">
-                    5
-                  </option>
+                 
                 </select>
               </div>
               <div>
-                <input type="date" class="form-control">
+                <select class="form-control nice-select wide">
+                  <option value="" disabled selected>
+                    Flavour 
+                  </option>
+                  <option value="">
+                  Chicken
+                  </option>
+                  <option value="">
+                   Beef
+                  </option>
+                  <option value="">
+                    Pep
+                  </option>
+                 
+                </select>
               </div>
+              
               <div class="btn_box">
-                <button>
-                  Book Now
+                <button type="submit" onclick="orderSubmit()">
+                  Order
                 </button>
               </div>
             </form>
@@ -1339,6 +1349,21 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
   </script>
   <!-- End Google Map -->
+  <!-- order Function -->
+  <script>
+    function orderSubmit(){
+      var name = document.getElementById("txtName").value;
+
+      var phone = document.getElementById("txtTel").value;
+      var size = document.getElementsByTagName("select").value;
+      var flavour = document.getElementsByTagName("select").value;
+
+      
+      var msg= name + "your order has been placed.\n You can pick it up from us or request delivery. \n This will cost you an extra Ksh 200 \n Thankyou for ordering with us"
+      
+
+    }
+  </script>
 
 </body>
 
