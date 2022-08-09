@@ -1005,3 +1005,124 @@ a:focus {
   color: inherit;
 }
 /*# sourceMappingURL=style.css.map */
+
+
+
+
+
+
+body {
+    color: #4b4b4b;
+    overflow-x: hidden;
+    font-family: Gloria Hallelujah;
+}
+
+.logo {
+    height: 50px;
+}
+
+.color-palace {
+    color: #ce3d3d;
+}
+
+.homepage h4 {
+    font-family: Patrick Hand, cursive;
+}
+
+.intro h1 {
+    font-size: 4em;
+    line-height: 1.1em;
+    font-weight: 900;
+}
+
+.intro .small-image img {
+    height: 400px;
+}
+
+.intro p {
+    font-size: 21px;
+}
+
+.btn {
+    background-color: #ebe70d;
+    outline: none;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.btn:hover {
+    background-color: #ebe70d;
+    color: white;
+}
+
+@media screen and (min-width: 767px) and (max-width: 992px) {
+    .intro {
+        margin-right: 20px;
+    }
+}
+
+.about {
+    color: white;
+    padding: 80px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url("../assets/about\ 1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about img {
+    height: 60px;
+}
+
+.about h4 {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.about p {
+    font-size: 15px;
+}
+
+.text-bold {
+    font-weight: bold;
+
+}
+
+tbody {
+    font-size: 15px;
+    text-transform: capitalize;
+    background-color: #ebe70d;
+}
+
+#location-input-details {
+    display: none;
+}
+
+.delivery-option {
+    font-size: 13px;
+
+}
+
+a {
+    text-decoration: none;
+    color: #ebe70d;
+}
+
+a:hover {
+    color: #ebe70d;
+}
+
+footer {
+    background-color: #323232;
+    color: white;
+}
+
+footer h4 {
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+footer p {
+    line-height: 1.3em;
