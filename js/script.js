@@ -297,7 +297,7 @@ $(function () {
                     <br>   
                     <div class="d-flex justify-content-between">
                             <div>
-                                <h5>Order Summary </h5>
+                                <h5>Thanks ${customerName}. Here is your receipt </h5>
                             </div>
                             <div>
                                 <p class="color-palace float-right">Total Ksh <span class="text-bold">${getTotalPlusDeliveryFee}</span></p>
@@ -338,10 +338,10 @@ $(function () {
                     console.log(getTotalPlusDeliveryFee);
                     $("#select-delivery-method").hide();
                     $(".delivery-head").append(`
-                    <div class="alert alert-success" role="alert">Hello. Order successfully processed. Your order will be delivered to your location 🙂</div>
+                    <div class="alert alert-success" role="alert">Hello.Your Order has been processed successfully . It will be delivered to your location </div>
                         <div class="d-flex justify-content-between">
                             <div>
-                                <h5>Order Summary 😇</h5>
+                                <h5>Here is your receipt </h5>
                             </div>
                             <div>
                                 <p class="color-palace float-right">Total Ksh <span class="text-bold">${getTotalPlusDeliveryFee}</span></p>
